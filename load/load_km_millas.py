@@ -4,13 +4,13 @@ from clases.km_millas import KilometrosMillas
 class VentanaKmMillas(QtWidgets.QDialog):
     def __init__(self):
         super().__init__()
-        uic.loadUi("gui/ventana_km_millas.ui", self)
+        uic.loadUi("gui/kmmillas.ui", self)
         self.show()
 
         self.btnConvertir.clicked.connect(self.botonConvertirClick)
 
     def botonConvertirClick(self):
-        millas = float(self.edit_millas.text())
+        millas = float(self.inputKilometros.text())
         km_millas = KilometrosMillas(0)
         km = km_millas.convertir(millas)
-        self.label_resultado.setText(str(km))
+        self.resultadoMillas.setText(str(km))

@@ -4,18 +4,18 @@ from clases.intereses import Intereses
 class VentanaIntereses(QtWidgets.QDialog):
     def __init__(self):
         super().__init__()
-        uic.loadUi("gui/ventana_intereses.ui", self)
+        uic.loadUi("gui/intereses.ui", self)
         self.show()
 
         self.btnCalcular.clicked.connect(self.botonCalcularClick)
 
     def botonCalcularClick(self):
-        capital = float(self.edit_capital.text())
-        tasa_interes = float(self.edit_tasa.text())
-        tiempo = float(self.edit_tiempo.text())
+        capital = float(self.inputCantidad.text())
+        tasa_interes = float(self.inputInteres.text())
+        tiempo = float(self.inputAnios.text())
         intereses = Intereses()
         intereses.cantidad = capital
         intereses.interes = tasa_interes
         intereses.años = tiempo
         intereses.realizarcalculos()
-        self.label_resultado.setText(str(intereses.vf))
+        self.resultado.setText(str(intereses.vf))

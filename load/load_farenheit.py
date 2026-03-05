@@ -4,13 +4,13 @@ from clases.farenheit import Farenheit
 class VentanaFarenheit(QtWidgets.QDialog):
     def __init__(self):
         super().__init__()
-        uic.loadUi("gui/ventana_farenheit.ui", self)
+        uic.loadUi("gui/farenheit.ui", self)
         self.show()
 
         self.btnConvertir.clicked.connect(self.botonConvertirClick)
 
     def botonConvertirClick(self):
-        farenheit = float(self.edit_farenheit.text())
-        farenheit_obj = Farenheit(farenheit)
-        celsius = farenheit_obj.convertir_a_celsius()
-        self.label_resultado.setText(str(celsius))
+        fahrenheit = float(self.inputFahrenheit.text())
+        fahrenheit_obj = Farenheit(fahrenheit)
+        celsius = fahrenheit_obj.convertir_a_celsius()
+        self.resultadoCelsius.setText(str(celsius))

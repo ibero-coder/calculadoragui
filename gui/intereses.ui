@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #f7f9fc;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+    color: #2d3436;
+}
+
+/* Título */
+QLabel#labelTitulo {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #2c5282;
+}
+
+/* Labels */
+QLabel {
+    color: #4a5568;
+}
+
+/* Resultado */
+QLabel#resultado {
+    background-color: #eef4ff;
+    border: 1px solid #d0d7e2;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+/* Entradas */
+QLineEdit {
+    background-color: white;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3da5ff;
+}
+
+/* Botón calcular */
+QPushButton#btnCalcular {
+    background-color: #3da5ff;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton#btnCalcular:hover {
+    background-color: #5ab3ff;
+}
+
+/* Botón cerrar */
+QPushButton#btnCerrar {
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton#btnCerrar:hover {
+    background-color: #dee2e6;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>371</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="labelTitulo">
+      <property name="text">
+       <string>Calculadora de Inversión</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="labelCantidad">
+        <property name="text">
+         <string>Cantidad</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputCantidad"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelInteres">
+        <property name="text">
+         <string>Interes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputInteres"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelAnios">
+        <property name="text">
+         <string>Años</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="inputAnios"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCalcular">
+      <property name="text">
+       <string>Calcular</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="resultado">
+      <property name="text">
+       <string>resultao</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kmmillas</class>
+ <widget class="QDialog" name="kmmillas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>407</width>
+    <height>255</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #f6f8fb;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+    color: #2d3436;
+}
+
+/* Labels normales */
+QLabel {
+    color: #4a5568;
+}
+QLabel#titulo {
+    color: #4a5568;
+	font-size:32pt;
+}
+
+/* Label donde aparece el resultado */
+QLabel#resultadoMillas {
+    background-color: #eef4ff;
+    border: 1px solid #d0d7e2;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+/* Campo para escribir kilómetros */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 11pt;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3da5ff;
+}
+
+/* Botón convertir */
+QPushButton#btnConvertir {
+    background-color: #3da5ff;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton#btnConvertir:hover {
+    background-color: #5ab3ff;
+}
+
+QPushButton#btnConvertir:pressed {
+    background-color: #2c8ce0;
+}
+
+/* Botón cerrar */
+QPushButton#btnCerrar {
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton#btnCerrar:hover {
+    background-color: #dee2e6;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>355</width>
+     <height>177</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titulo">
+      <property name="text">
+       <string>Kilometros a Millas</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="km">
+        <property name="text">
+         <string>Kilometros</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="inputKilometros">
+        <property name="text">
+         <string>23232</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnConvertir">
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="resultadoMillas">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

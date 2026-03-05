@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>443</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background-color: #f7f9fc;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+    color: #2d3436;
+}
+
+/* Labels de texto */
+QLabel {
+    color: #4a5568;
+}
+
+QLabel#titulon {
+    color: #4a5568;
+	font-size: 28pt;
+	font-weight: bold;
+}
+
+
+/* Label del resultado */
+QLabel#resultadoCelsius {
+    background-color: #eef4ff;
+    border: 1px solid #d0d7e2;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #2c5282;
+}
+
+/* Campo de entrada */
+QLineEdit {
+    background-color: white;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 11pt;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3da5ff;
+}
+
+/* Botón convertir */
+QPushButton#btnConvertir {
+    background-color: #3da5ff;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 600;
+}
+
+QPushButton#btnConvertir:hover {
+    background-color: #5ab3ff;
+}
+
+QPushButton#btnConvertir:pressed {
+    background-color: #2c8ce0;
+}
+
+/* Botón cerrar */
+QPushButton#btnCerrar {
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton#btnCerrar:hover {
+    background-color: #dee2e6;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>350</width>
+     <height>168</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="titulon">
+      <property name="text">
+       <string>Farenheit - Celcius</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="inputFahrenheit"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnConvertir">
+      <property name="text">
+       <string>Convertir</string>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="resultadoCelsius">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

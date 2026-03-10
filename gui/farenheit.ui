@@ -86,7 +86,7 @@ QPushButton#btnCerrar:hover {
     background-color: #dee2e6;
 }</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -116,7 +116,7 @@ QPushButton#btnCerrar:hover {
     <item alignment="Qt::AlignHCenter">
      <widget class="QLabel" name="resultadoCelsius">
       <property name="text">
-       <string>TextLabel</string>
+       <string>0</string>
       </property>
      </widget>
     </item>
